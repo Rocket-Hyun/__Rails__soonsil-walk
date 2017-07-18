@@ -1,0 +1,2 @@
+class Plusnum < ApplicationRecord
+end

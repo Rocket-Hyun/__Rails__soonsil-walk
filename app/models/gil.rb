@@ -1,0 +1,2 @@
+class Gil < ApplicationRecord
+end

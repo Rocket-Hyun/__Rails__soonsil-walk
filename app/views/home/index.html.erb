@@ -1,0 +1,691 @@
+<!-- 길 상세보기 -->
+ <div id="modal1" class="modal">
+   <div class="modal-content">
+     <div class="modal-location2-container">
+       <img class="modal-title-exit modal-action modal-close" src="<%= image_path 'x.png' %>" />
+       <div class="modal-location2 none center">
+         <img class="modal-location2-img" src="<%= image_path 'gil1.jpg'%>">
+       </div>
+     </div>
+   </div>
+   <div class="row modal-footer-row">
+     <a href="http://bit.ly/2fv1sIg" target="_blank">
+       <div class="modal-footer-left col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;지도맵 보러가기
+        </p>
+       </div>
+     </a>
+
+     <% if @ip == session[:user_id] %>
+     <div class="modal-footer-right col s6 finished" style="background-color:#808080;">
+        <p class="modal-footer-text none center">
+         &nbsp;참여완료
+         <span class="num-now">(<%= Gil.find(1).like + Plusnum.find(1).add_num %>명)</span>
+        </p>
+     </div>
+     <% else %>
+       <a class="volunteer" id="volunteer1" >
+       <div class="modal-footer-right col s6">
+          <p class="modal-footer-text none center">
+            <i class="fa fa-check" aria-hidden="true"></i>&nbsp;참여하기
+            <span class="num-now">(<%= Gil.find(1).like + Plusnum.find(1).add_num %>명)</span>
+          </p>
+       </div>
+       </a>
+     <% end %>
+   </div>
+ </div>
+
+ <div id="modal2" class="modal">
+   <div class="modal-content">
+     <div class="modal-location2-container">
+       <img class="modal-title-exit modal-action modal-close" src="<%= image_path 'x.png' %>" />
+       <div class="modal-location2 none center">
+         <img class="modal-location2-img" src="<%= image_path 'gil2.jpg'%>">
+       </div>
+     </div>
+   </div>
+   <div class="row modal-footer-row">
+     <a href="http://bit.ly/2eQWVyo" target="_blank">
+       <div class="modal-footer-left col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;지도맵 보러가기
+        </p>
+       </div>
+     </a>
+
+     <% if @ip == session[:user_id] %>
+     <div class="modal-footer-right col s6 finished" style="background-color:#808080;">
+        <p class="modal-footer-text none center">
+         &nbsp;참여완료
+         <span class="num-now">(<%= Gil.find(2).like + Plusnum.find(2).add_num %>명)</span>
+        </p>
+     </div>
+     <% else %>
+       <a class="volunteer" id="volunteer2" >
+       <div class="modal-footer-right col s6">
+          <p class="modal-footer-text none center">
+            <i class="fa fa-check" aria-hidden="true"></i>&nbsp;참여하기
+            <span class="num-now">(<%= Gil.find(2).like + Plusnum.find(2).add_num %>명)</span>
+          </p>
+       </div>
+       </a>
+     <% end %>
+   </div>
+ </div>
+
+ <div id="modal3" class="modal">
+   <div class="modal-content">
+     <div class="modal-location2-container">
+       <img class="modal-title-exit modal-action modal-close" src="<%= image_path 'x.png' %>" />
+       <div class="modal-location2 none center">
+         <img class="modal-location2-img" src="<%= image_path 'gil3.jpg'%>">
+       </div>
+     </div>
+   </div>
+   <div class="row modal-footer-row">
+     <a href="http://bit.ly/2fAtCjz" target="_blank">
+       <div class="modal-footer-left col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;지도맵 보러가기
+        </p>
+       </div>
+     </a>
+     <% if @ip == session[:user_id] %>
+     <div class="modal-footer-right col s6 finished" style="background-color:#808080;">
+        <p class="modal-footer-text none center">
+         &nbsp;참여완료
+         <span class="num-now">(<%= Gil.find(3).like + Plusnum.find(3).add_num %>명)</span>
+        </p>
+     </div>
+     <% else %>
+       <a class="volunteer" id="volunteer3" >
+       <div class="modal-footer-right col s6">
+          <p class="modal-footer-text none center">
+            <i class="fa fa-check" aria-hidden="true"></i>&nbsp;참여하기
+            <span class="num-now">(<%= Gil.find(3).like + Plusnum.find(3).add_num %>명)</span>
+          </p>
+       </div>
+       </a>
+     <% end %>
+   </div>
+ </div>
+
+ <div id="modal4" class="modal">
+   <div class="modal-content">
+     <div class="modal-location2-container">
+       <img class="modal-title-exit modal-action modal-close" src="<%= image_path 'x.png' %>" />
+       <div class="modal-location2 none center">
+         <img class="modal-location2-img" src="<%= image_path 'gil4.jpg'%>">
+       </div>
+     </div>
+   </div>
+   <div class="row modal-footer-row">
+     <a href="http://bit.ly/2fjxq9T" target="_blank">
+       <div class="modal-footer-left col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;지도맵 보러가기
+        </p>
+       </div>
+     </a>
+     <% if @ip == session[:user_id] %>
+     <div class="modal-footer-right col s6 finished" style="background-color:#808080;">
+        <p class="modal-footer-text none center">
+         &nbsp;참여완료
+         <span class="num-now">(<%= Gil.find(4).like + Plusnum.find(4).add_num %>명)</span>
+        </p>
+     </div>
+     <% else %>
+     <a class="volunteer" id="volunteer4" >
+     <div class="modal-footer-right col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-check" aria-hidden="true"></i>&nbsp;참여하기
+          <span class="num-now">(<%= Gil.find(4).like + Plusnum.find(4).add_num %>명)</span>
+        </p>
+     </div>
+     </a>
+     <% end %>
+   </div>
+ </div>
+
+ <div id="modal5" class="modal">
+   <div class="modal-content">
+     <div class="modal-location2-container">
+       <img class="modal-title-exit modal-action modal-close" src="<%= image_path 'x.png' %>" />
+       <div class="modal-location2 none center">
+         <img class="modal-location2-img" src="<%= image_path 'gil5.jpg'%>">
+       </div>
+     </div>
+   </div>
+   <div class="row modal-footer-row">
+     <a href="http://bit.ly/2fz3pnn" target="_blank">
+       <div class="modal-footer-left col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;지도맵 보러가기
+        </p>
+       </div>
+     </a>
+     <% if @ip == session[:user_id] %>
+     <div class="modal-footer-right col s6 finished" style="background-color:#808080;">
+        <p class="modal-footer-text none center">
+         &nbsp;참여완료
+         <span class="num-now">(<%= Gil.find(5).like + Plusnum.find(5).add_num %>명)</span>
+        </p>
+     </div>
+     <% else %>
+     <a class="volunteer" id="volunteer5" >
+     <div class="modal-footer-right col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-check" aria-hidden="true"></i>&nbsp;참여하기
+          <span class="num-now">(<%= Gil.find(5).like + Plusnum.find(5).add_num %>명)</span>
+        </p>
+     </div>
+     </a>
+     <% end %>
+   </div>
+ </div>
+
+ <div id="modal6" class="modal">
+   <div class="modal-content">
+     <div class="modal-location2-container">
+       <img class="modal-title-exit modal-action modal-close" src="<%= image_path 'x.png' %>" />
+       <div class="modal-location2 none center">
+         <img class="modal-location2-img" src="<%= image_path 'gil6.jpg'%>">
+       </div>
+     </div>
+   </div>
+   <div class="row modal-footer-row">
+     <a href="http://bit.ly/2fz600y" target="_blank">
+       <div class="modal-footer-left col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;지도맵 보러가기
+        </p>
+       </div>
+     </a>
+     <% if @ip == session[:user_id] %>
+     <div class="modal-footer-right col s6 finished" style="background-color:#808080;">
+        <p class="modal-footer-text none center">
+         &nbsp;참여완료
+         <span class="num-now">(<%= Gil.find(6).like + Plusnum.find(6).add_num %>명)</span>
+        </p>
+     </div>
+     <% else %>
+     <a class="volunteer" id="volunteer6" >
+     <div class="modal-footer-right col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-check" aria-hidden="true"></i>&nbsp;참여하기
+          <span class="num-now">(<%= Gil.find(6).like + Plusnum.find(6).add_num %>명)</span>
+        </p>
+     </div>
+     </a>
+     <% end %>
+   </div>
+ </div>
+
+ <div id="modal7" class="modal">
+   <div class="modal-content">
+     <div class="modal-location2-container">
+       <img class="modal-title-exit modal-action modal-close" src="<%= image_path 'x.png' %>" />
+       <div class="modal-location2 none center">
+         <img class="modal-location2-img" src="<%= image_path 'gil7.jpg'%>">
+       </div>
+     </div>
+   </div>
+   <div class="row modal-footer-row">
+     <a href="http://bit.ly/2fyXU88" target="_blank">
+       <div class="modal-footer-left col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;지도맵 보러가기
+        </p>
+       </div>
+     </a>
+     <% if @ip == session[:user_id] %>
+     <div class="modal-footer-right col s6 finished" style="background-color:#808080;">
+        <p class="modal-footer-text none center">
+         &nbsp;참여완료
+         <span class="num-now">(<%= Gil.find(7).like + Plusnum.find(7).add_num %>명)</span>
+        </p>
+     </div>
+     <% else %>
+     <a class="volunteer" id="volunteer7" >
+     <div class="modal-footer-right col s6">
+        <p class="modal-footer-text none center">
+          <i class="fa fa-check" aria-hidden="true"></i>&nbsp;참여하기
+          <span class="num-now">(<%= Gil.find(7).like + Plusnum.find(7).add_num %>명)</span>
+        </p>
+     </div>
+     </a>
+     <% end %>
+   </div>
+ </div>
+
+
+ <!-- 길 상세보기 -->
+
+
+<div class="main-container">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">순실길 밟으러 가자</a>
+      <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-menu" aria-hidden="true"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul> -->
+    </div>
+  </nav>
+
+  <div class="main-body">
+    <div class="main row container">
+      <div class="image-container col s12 m8 offset-m2" style="padding-top:20px;padding-bottom:20px;">
+          <img style="width:100%;" class="img-responsive" src="<%= image_path 'map.png'%>">
+          <div id="image-text1">
+            <h5 style="margin:0">순실길 밟으러 가자!</h5>
+            <p style="margin:0">
+              밟고자 하는 순실길을 선택해주세요
+            </p>
+          </div>
+          <div id="image-text2">
+            <p style="margin:0">
+              <i class="fa fa-user" aria-hidden="true"></i> <span class="num_of_peo"><%= @all %></span> 명 참여 중
+            </p>
+          </div>
+          <a href="#modal1" class="modal-trigger" id="gil1"><img class="gil-img" src="<%= image_path 'btn_footloc_1.png' %>"></a>
+          <a href="#modal2" class="modal-trigger" id="gil2"><img class="gil-img" src="<%= image_path 'btn_footloc_2.png' %>"></a>
+          <a href="#modal3" class="modal-trigger" id="gil3"><img class="gil-img" src="<%= image_path 'btn_footloc_3.png' %>"></a>
+          <a href="#modal4" class="modal-trigger" id="gil4"><img class="gil-img" src="<%= image_path 'btn_footloc_4.png' %>"></a>
+          <a href="#modal5" class="modal-trigger" id="gil5"><img class="gil-img" src="<%= image_path 'btn_footloc_5.png' %>"></a>
+          <a href="#modal6" class="modal-trigger" id="gil6"><img class="gil-img" src="<%= image_path 'btn_footloc_6.png' %>"></a>
+          <a href="#modal7" class="modal-trigger" id="gil7"><img class="gil-img" src="<%= image_path 'btn_footloc_7.png' %>"></a>
+      </div>
+    </div>
+
+    <div class="desc">
+      <div class="desc-container">
+        <h5 class="desc-title center" style="margin-top:0;"><b>순실길 밟으러 가자 캠페인</b></h5>
+        <h5 class="center"><img class="desc-img" src="<%= image_path 'ft.png' %>"></h5>
+        <p class="desc-content center">
+          <ul class="desc-content center">
+            <li>
+              <b>·</b>일시 : 11월 12일 토요일 오후 1시 ~ 오후 7시
+            </li>
+            <li>
+              <b>·</b>장소 : 서울 내 7개 지점
+            </li>
+            <li>
+              <b>·</b>행사목적 : 순실길 들러 스탬프찍고 우주의 기운 받아가세요
+            </li>
+            <li>
+              <b>·</b>행사내용 : 스탬프 찍기, 사진 밟기, 포토존, <br />시민자유발언, 그 외 수많은 자발적 퍼포먼스(?)
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="act-container container row hide-on-small-and-down show-on-medium-and-up">
+      <div class="act act1 col s12 m4">
+        <h5 class="center step-title">스탬프찍기</h5>
+        <h5 class="center"><img class="step-img" src="<%= image_path 'step1.png' %>"></h5>
+        <p class="center step-content">
+          종착지에 도착하면<br />
+          <b><span style="text-decoration: line-through;color:#b2b2b2;">청</span>홍화대에 들려 스탬프 찍어가세요</b><br />
+          우주의 기운이 당신과 함께 합니다.
+        </p>
+      </div>
+      <div class="act act2 col s12 m4">
+        <h5 class="center step-title">사진 밟기</h5>
+        <h5 class="center"><img class="step-img" src="<%= image_path 'step2.png' %>"></h5>
+        <p class="center step-content">
+          순실길 바닥에 붙은<br />
+          <b>'그녀, 그놈'</b>들의 사진을 밟으면서<br />
+           스트레스 풀어보세요. <br />
+        </p>
+      </div>
+      <div class="act act3 col s12 m4">
+        <h5 class="center step-title">시민 자유발언</h5>
+        <h5 class="center"><img class="step-img" src="<%= image_path 'step2-2.png' %>"></h5>
+        <p class="center step-content">
+          번화가에 나온 시민들을 위해<br />
+          <b>직접 발언해주세요.</b><br /><br />
+           평범한 사람들의 목소리가 <br />
+         <b>모두의 참여를 이끌어내지 않을까요?</b>
+        </p>
+      </div>
+    </div>
+
+        <div class="slider hide-on-med-and-up show-on-small-and-down">
+          <div class="slider-left">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </div>
+          <div class="slider-right">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </div>
+          <ul class="slides">
+            <li>
+              <img src="<%= image_path 'white.jpg' %>">
+              <div class="caption center-align">
+                <h5 class="center step-title">스탬프 찍기</h5>
+                <h5 class="center"><img class="step-img" src="<%= image_path 'step1.png' %>"></h5>
+                <p class="center step-content">
+                  종착지에 도착하면<br />
+                  <b><span style="text-decoration: line-through;color:#b2b2b2;">청</span>홍화대에 들려 스탬프 찍어가세요</b><br />
+                  우주의 기운이 당신과 함께 합니다.
+                </p>
+
+              </div>
+            </li>
+            <li>
+              <img src="<%= image_path 'white.jpg' %>">
+              <div class="caption center-align">
+                <h5 class="center step-title">사진 밟기</h5>
+                <h5 class="center"><img class="step-img" src="<%= image_path 'step2.png' %>"></h5>
+                <p class="center step-content">
+                  순실길 바닥에 붙은<br />
+                  <b>'그녀, 그놈'</b>들의 사진을 밟으면서<br />
+                   스트레스 풀어보세요. <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="<%= image_path 'white.jpg' %>">
+              <div class="caption center-align">
+                <h5 class="center step-title">시민 자유발언</h5>
+                <h5 class="center"><img class="step-img" src="<%= image_path 'step2-2.png' %>"></h5>
+                <p class="center step-content">
+                  번화가에 나온 시민들을 위해<br />
+                  <b>직접 발언해주세요.</b><br /><br />
+                   평범한 사람들의 목소리가 <br />
+                 <b>모두의 참여를 이끌어내지 않을까요?</b>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+    <div class="end" style="background-image: url('<%= image_path 'likejune.png' %>');">
+      <div class="end-filter">
+        <h2 class="center end-title"><i class="fa fa-quote-left quote" aria-hidden="true"></i>&nbsp;내일을 위한<br />
+          작지만 큰, 반보 밟기&nbsp;<i class="fa fa-quote-right quote" aria-hidden="true"></i></h2>
+        <br />
+        <p class="center end-content end-content-red">
+          1919년 3.1운동<br />
+          1960년 4.19혁명<br />
+          1987년 6월 항쟁<br />
+          <b>·<br />
+          ·<br />
+          ·</b><br />
+        </p>
+        <p class="center end-content">
+          모두 몇명의 지도자들이 주도적으로 만든 것이 아닌<br />
+          학생, 시민들의 자발적 참여로 이루어낸<br />
+          자랑스러운 우리의 역사입니다.<br /><br />
+          <b>
+            그리고 오늘, 2016년 11월...<br />
+            또 하나의 자랑스러운 오늘을, 자랑스러운 내일을<br />
+            함께 만들어 보아요
+          </b>
+        </p>
+      </div>
+    </div>
+    <div class="facebook">
+      <p class="center facebook-title">
+        <b>소 통</b>&nbsp;및<b>&nbsp;문 의</b>
+      </p>
+      <div class="facebook-btn">
+        <a href="https://www.facebook.com/soonsilwalk">
+          <h6 class="center facebook-btn-content"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;<b>순실길 밟으러 가자</b>&nbsp;페이스북 페이지</h6>
+        </a>
+      </div>
+    </div>
+    <div class="social">
+      <!-- 라이브리 시티 설치 코드 -->
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8yNzExNy8zNzA3">
+      	<script type="text/javascript">
+         (function(d, s) {
+             var j, e = d.getElementsByTagName(s)[0];
+
+             if (typeof LivereTower === 'function') { return; }
+
+             j = d.createElement(s);
+             j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+             j.async = true;
+
+             e.parentNode.insertBefore(j, e);
+         })(document, 'script');
+      	</script>
+      <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+      </div>
+      <!-- 시티 설치 코드 끝 -->
+    </div>
+  </div>
+
+  <footer>
+    <!-- <div class="footer-img-container container row">
+      <div class="footer-img col s3" id="footer-img1" style="padding:10px;">
+        <div class="grey" style="height:100px;" >
+
+        </div>
+
+      </div>
+      <div class="footer-img col s3" id="footer-img2" style="padding:10px;">
+        <div class="grey" style="height:100px;" >
+
+        </div>
+      </div>
+      <div class="footer-img col s3" id="footer-img3" style="padding:10px;">
+        <div class="grey" style="height:100px;" >
+
+        </div>
+      </div>
+      <div class="footer-img col s3" id="footer-img4" style="padding:10px;">
+        <div class="grey" style="height:100px;" >
+
+        </div>
+      </div>
+    </div> -->
+    <div class="footer-text-container container">
+      <p class="center">
+        11월 12일, 순실길 밟고 우주의 기운 받자 <br />순실길 밟으러 가자 캠페인
+      </p>
+      <h5 class="center"><a class="black-text" href="http://www.soonsilwalk.com">WWW.SOONSILWALK.COM</a></h5>
+    </div>
+  </footer>
+
+  <!-- <div class="fixed-action-btn toolbar">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i></a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
+      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div> -->
+</div>
+
+
+<div class="fixed-action-btn horizontal click-to-toggle hide-on-med-and-up show-on-small">
+  <a class="btn-floating btn-large red">
+    <i class="fa fa-share-alt" aria-hidden="true"></i>
+  </a>
+  <ul>
+    <li><a class="btn-floating" href="https://www.facebook.com/sharer/sharer.php?u=http://soonsilwalk.com" target="_blank"><img class="sns-right" src="<%= image_path 'sns1.png' %>"></a></li>
+    <li><a class="btn-floating" href="https://twitter.com/intent/tweet?text=11월 12일, 순실길 밟고 우주의 기운 받자&url=http://www.soonsilwalk.com"><img class="sns-right" src="<%= image_path 'sns2.png' %>"></a></li>
+    <li><a class="btn-floating" id="kakao-link-btn" href="javascript:sendLink()"><img class="sns-right" src="<%= image_path 'sns3.png' %>"></a></li>
+    <li><a class="clipboard btn-floating grey tooltipped" data-position="top" data-delay="50" data-tooltip="복사완료!" data-clipboard-text="http://soonsilwalk.com"><img class="sns-right" src="<%= image_path 'link.png' %>"></a></li>
+  </ul>
+</div>
+
+<div class="iosclipboard row">
+  <div class="card iostext col s10 offset-s1 black">
+    <p class="center iosinner">
+      <b class=" iosinner">http://soonsilwalk.com</b><br />
+      URL을 길게 누르면 복사할 수 있습니다.
+    </p>
+  </div>
+</div>
+
+<div id="bottom-section" class="hide-on-small-and-down show-on-medium">
+  <div class="row" style="margin-bottom:0px;">
+      <div class="col s12">
+        <a class="tooltipped" data-position="left" data-delay="50" data-tooltip="클릭시 페이스북으로 공유됩니다!&nbsp;" href="https://www.facebook.com/sharer/sharer.php?u=http://soonsilwalk.com" target="_blank">
+        <img class="sns-right" src="<%= image_path 'sns1.png' %>">
+        </a>
+      </div>
+      <div class="col s12">
+        <a class="tooltipped" data-position="left" data-delay="50" data-tooltip="클릭시 트위터로 공유됩니다!&nbsp;" href="https://twitter.com/intent/tweet?text=11월 12일, 순실길 밟고 우주의 기운 받자&url=http://soonsilwalk.com" target="_blank">
+        <img class="sns-right" src="<%= image_path 'sns2.png' %>">
+        </a>
+      </div>
+      <div class="col s12">
+        <a class="tooltipped" data-position="left" data-delay="50" data-tooltip="모바일로 이용해주세요!&nbsp;" id="kakao-link-btn" href="javascript:sendLink()">
+        <img class="sns-right" src="<%= image_path 'sns3.png' %>">
+        </a>
+      </div>
+      <div class="col s12">
+        <!-- <a onclick="Materialize.toast('I am a toast', 4000)" class="clipboard" data-clipboard-text="http://soonsilwalk.com"> -->
+        <a class="clipboard tooltipped" data-position="left" data-delay="50" data-tooltip="클릭시 링크가 복사됩니다!&nbsp;" data-clipboard-text="http://soonsilwalk.com">
+        <img class="sns-right" src="<%= image_path 'link.png' %>">
+        </a>
+      </div>
+  </div>
+</div>
+
+
+
+
+<script>
+$(document).ready(function(){
+    $('.modal-trigger').leanModal();
+   $('.slider').slider({
+     full_width: true,
+     indicators:false,
+     height:450
+   });
+   $('.slider').slider('pause');
+   $('.tooltipped').tooltip({delay: 50});
+   getMobileOperatingSystem();
+});
+
+
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      // Windows Phone must come first because its UA also contains "Android"
+    // if (/windows phone/i.test(userAgent)) {
+    //     return "Windows Phone";
+    // }
+
+    // if (/android/i.test(userAgent)) {
+    //     $( "ul .clipboard" ).addClass( "tooltipped" );
+    // }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        $( "ul .clipboard" ).removeClass( "tooltipped" );
+          $( "ul .clipboard" ).addClass( "iosver" );
+           $("ul .clipboard").tooltip('remove');
+    }
+
+        // $( "ul .clipboard" ).addClass( "nothing" );
+
+    // return "unknown";
+};
+
+  // $('.modal').modal({
+  //     starting_top: '4%', // Starting top style attribute
+  //     ending_top: '10%', // Ending top style attribute
+  //   }
+  // );
+
+  $(".button-collapse").sideNav();
+
+    $(".slider-right").click(function() {
+      $('.slider').slider('next');
+    });
+
+    $(".slider-left").click(function() {
+      $('.slider').slider('prev');
+    });
+
+    $(".volunteer").click(function() {
+      fbq('track', 'CompleteRegistration');
+      $.ajax({
+        method: "POST",
+        url: "home/"+ $(this).attr('id')
+      })
+      $(".modal-footer-right").css('background-color','#808080');
+      $(".modal-footer-right p").text('참여완료(<%= Gil.find(3).like + Plusnum.find(3).add_num + 1 %>명)');
+      $(".volunteer").off();
+      swal(
+        '참여 완료!',
+        '우주의 기운을 받으실거에요!',
+        'success'
+      )
+      $(".num_of_peo").text(<%= @all %> + 1);
+    });
+
+    $(".finished").click(function() {
+      swal(
+        '이미 참가하셨습니다!',
+        '친구들과 함께 참여하는건 어떠세요?',
+        'error'
+      )
+    });
+
+    // $("body").not( ".iosclipboard" ).click(function(){
+    //   $('.iosclipboard').hide();
+    // });
+
+    $('html').click(function(e) {
+       if(!$(e.target).hasClass('iosinner') )
+       {
+           $('.iosclipboard').hide();
+       }
+    });
+
+    $(document).on('click', '.iosver', function(){
+      setTimeout(function(){
+        $('.iosclipboard').fadeIn("slow");
+      }, 500);
+    });
+
+</script>
+
+
+<script type='text/javascript'>
+
+  Kakao.init('b8e188be4ecf20b61e013c9cb66aa13e');
+
+  function sendLink() {
+    Kakao.Link.sendTalkLink({
+      label: '11월 12일, 순실길 밟고 우주의 기운 받자', // 공유할 메세지의 제목을 설정
+       image: {
+      src: 'https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/14639736_1951657665061134_4939132889871805871_n.jpg?oh=6a752fd5c9113dbe36c9e43d79946880&oe=58C7A708',
+      width: '300',
+      height: '200'
+    } // 이건 썸네일을 설정 하는 겁니다.
+      ,
+    webButton: {
+      text: '나랑 가까운 순실길은?',
+       url : 'http://soonsilwalk.com' // 각각의 포스팅 본문의 링크를 거는 코드입니다.
+    }
+    });
+  };
+
+
+
+
+
+</script>

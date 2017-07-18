@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>순실길 밟자</title>
+
+
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+<script src="https://cdn.jsdelivr.net/sweetalert2/6.0.1/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.0.1/sweetalert2.min.css">
+
+    <meta charset="utf-8"/>
+    <link rel="icon" href="<%= image_path 'thumbnail.jpg'%>">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="순실길 밟으러 가자. 11월 12일 함께 밟아요" />
+    <meta property="og:description" content="시국선언, 페스티발, 참여문화, 재밌는 시위" />
+    <meta property="og:image" content="<%= image_path 'thumbnail.jpg'%>" />
+    <meta property="og:url" content="http://www.soonsilwalk.com" />
+    <!-- <meta name="google-site-verification" "생성필요" /> -->
+    <!-- <meta name="naver-site-verification" "생성필요"/> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="copyright" content="11월 12일, 순실길 함께 밟아요"/>
+    <meta name="description" content="서울 7개 순실길 밟고 우주의 기운 받아가세요" />
+    <meta name="keywords" content=" 박근혜,하야,최순실,시국선언,페스티발,민중총궐기,6월 항쟁,시위,촛불시위 " />
+
+
+    <!-- GA Code -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86942332-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- GA Code -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '170415433393139');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=170415433393139&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Hotjar Tracking Code for http://soonsilwalk.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:331223,hjsv:5};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

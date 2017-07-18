@@ -1,0 +1,1005 @@
+@import "materialize";
+
+@charset "UTF-8";
+
+// Mixins
+// @import "materialize/components/prefixer";
+@import "materialize/components/mixins";
+@import "materialize/components/color";
+
+// Variables;
+@import "materialize/components/variables";
+
+// Reset
+@import "materialize/components/normalize";
+
+// materialize/components
+@import "materialize/components/global";
+@import "materialize/components/icons-material-design";
+@import "materialize/components/grid";
+@import "materialize/components/navbar";
+@import "materialize/components/roboto";
+@import "materialize/components/typography";
+@import "materialize/components/cards";
+@import "materialize/components/toast";
+@import "materialize/components/tabs";
+@import "materialize/components/tooltip";
+@import "materialize/components/buttons";
+@import "materialize/components/dropdown";
+@import "materialize/components/waves";
+@import "materialize/components/modal";
+@import "materialize/components/collapsible";
+@import "materialize/components/chips";
+@import "materialize/components/materialbox";
+@import "materialize/components/forms/forms";
+@import "materialize/components/table_of_contents";
+@import "materialize/components/sideNav";
+@import "materialize/components/preloader";
+@import "materialize/components/slider";
+@import "materialize/components/carousel";
+@import "materialize/components/date_picker/default";
+@import "materialize/components/date_picker/default.date";
+@import "materialize/components/date_picker/default.time";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body{
+  font-family: 'Nanum Square', sans-serif;
+  // position:relative;
+}
+
+.iosclipboard{
+  width:100%;
+  position:fixed;
+  bottom:15%;
+  z-index:9999;
+  display:none;
+}
+
+.iostext{
+background-color:#000;
+color:#fff;
+}
+
+.fa-menu {
+  margin-left:5px;
+}
+
+.none{
+  padding:0px !important;
+  margin:0px !important;
+}
+
+@media (max-width:767px) {
+  .modal{
+    width:95%;
+    max-height: 95% !important ;
+    overflow-y: hidden !important ;
+    top: 4% !important ;
+  }
+  .modal-content{
+    padding:0px !important;
+  }
+  .modal-title-container{
+    margin-top:10px;
+    padding-bottom:10px;
+  }
+  .modal-title{
+    font-size:20pt;
+    font-weight: bold;
+    color:#505050;
+  }
+
+  .modal-title-exit{
+    height:20px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+
+  .modal-location-container{
+    width:100%;
+    margin-bottom:50px;
+  }
+
+  .modal-location{
+    font-size:10pt;
+    font-weight: bold;
+    color:#505050;
+  }
+
+  .modal-location2{
+    background-color: #e25c5b;
+  }
+
+  .modal-location2-container{
+    position:relative;
+  }
+
+  .modal-location2-img{
+    width:100%;
+  }
+
+  .modal-footer-row{
+    padding:0px !important;
+    margin:0px !important;
+    margin-top:0px !important;
+  }
+
+  .modal-footer-left{
+    height:50px !important;
+    color:#505050;
+    background-color: #f7c6c6;
+  }
+
+  .modal-footer-right{
+    height:50px !important;
+    color:#ffffff;
+    background-color: #e25c5b;
+  }
+
+  .modal-footer-text{
+    font-size:12pt;
+    font-weight:bold;
+    line-height: 50px;
+  }
+
+  .num-now{
+    font-size:9pt;
+  }
+
+  // 모달
+
+    /* matches 'btn-xs' */
+    .gil-img{
+      width: 60px;
+    }
+
+    .image-container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    nav{
+      height:50px;
+      line-height: 50px;
+      background-color:#e25c5b !important;
+    }
+
+    .brand-logo{
+    //  font-size:40pt !important;
+     // color:#4b4b4b;
+     // letter-spacing:-80;
+    }
+
+    #image-text1 h5{
+      font-size:15pt;
+      color:#4b4b4b;
+    }
+
+    #image-text1 p{
+      font-size:8pt;
+      color:#4b4b4b;
+    }
+
+    #image-text2 p{
+      font-size:13pt;
+      color:#4b4b4b;
+    }
+
+    #image-text2 .fa-user{
+      font-size:13pt;
+    }
+
+      .desc{
+        background-color:#e25c5b !important;
+        padding-top:40px;
+        padding-bottom:40px;
+        // height:456px;
+      }
+
+      .desc-title{
+        font-size:15pt;
+        font-weight: bold;
+        color:#ffffff;
+        // letter-spacing: -4px;
+        margin-bottom:22px;
+      }
+
+      .desc-img{
+        height:50px;
+      }
+
+      .desc-content{
+        font-size:8pt;
+        color:#ffffff;
+        margin-top:22px;
+      }
+
+      // .act-container{
+      //   height:480px;
+      //   padding-top:110px;
+      //   padding-bottom:110px;
+      // }
+
+      .slider{
+        position:relative;
+      }
+
+      .slider .slides li .caption{
+        width: 100% !important;
+        top:20%;
+        left:0;
+      }
+
+      .slider-left{
+        position:absolute;
+        top:40%;
+        left:5%;
+        color:#efefef;
+        font-size:80px;
+        z-index:90;
+      }
+
+      .slider-right{
+        position:absolute;
+        top:40%;
+        right:5%;
+        color:#efefef;
+        font-size:80px;
+        z-index:90;
+      }
+
+      .step-img{
+        width:103px !important;
+      }
+
+      .step-num{
+        font-size:25pt;
+        color:#535353;
+        letter-spacing: -3.7px;
+        margin-bottom:0px;
+      }
+
+      .step-title{
+        font-size:25pt;
+        color:#535353;
+        margin-top:0px;
+      }
+
+      .step-content{
+        // font-size:32pt;
+        color:#535353 !important;
+        // margin-top:0px;
+      }
+
+      .end{
+        background-repeat: no-repeat;
+        background-position: 60% 45%;
+        background-size:cover;
+        // height:570px;
+      }
+
+      .quote{
+        font-size: 15pt !important;
+      }
+
+      .end-filter{
+        height:100%;
+        width:100%;
+        // background: rgba(255, 255, 255, .7);
+        padding-top:50px !important;
+        padding-bottom:50px !important;
+      }
+
+      .end-title{
+        font-size:25pt;
+        color:#7b7b7b;
+        // line-spacing:7px;
+        margin-bottom:0px;
+      }
+
+      .end-content{
+        margin-top:0;
+        font-size:10pt;
+        line-spacing:3px;
+      }
+
+      .end-content-red{
+        color:#e25c5b;
+        margin-top:20px;
+        margin-bottom:0px;
+      }
+
+      .facebook{
+        height:180px;
+        padding-top:30px !important;
+        padding-bottom:30px !important;
+        background-color:#F7F7F7;
+      }
+
+      .facebook-title{
+        font-size:16pt;
+        color:#3f3f3f;
+        letter-spacing: 4.8px;
+        margin-bottom:24px;
+        margin-top:0px;
+      }
+
+      .facebook-btn{
+        height:40px;
+        line-height: 40px;
+        width:80%;
+        border-radius: 10px;
+        border: 3px solid #395A99;
+        padding: 5px;
+        margin: 0 auto;
+        background-color:#fff;
+      }
+
+      .fa-facebook{
+        color:#395A99;
+        font-size:10pt;
+      }
+
+      .facebook-btn-content{
+        font-size:10pt;
+        color:#3b5998;
+        // letter-spacing: -4px;
+      }
+
+      #bottom-section{
+          position:fixed;
+          width:70px;
+          bottom:50%;
+          right:0px;
+          margin-bottom:0px;
+          z-index:9999;
+      }
+
+
+      footer{
+        padding-bottom:70px;
+      }
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+  .modal{
+    width:80%;
+    max-height: 95% !important ;
+    overflow-y: hidden !important ;
+    top: 4% !important ;
+  }
+  .modal-content{
+    padding:0px !important;
+  }
+  .modal-title-container{
+    margin-top:10px;
+    padding-bottom:10px;
+  }
+  .modal-title{
+    font-size:20pt;
+    font-weight: bold;
+    color:#505050;
+  }
+
+  .modal-title-exit{
+    height:20px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+
+  .modal-location-container{
+    width:100%;
+    margin-bottom:50px;
+  }
+
+  .modal-location{
+    font-size:10pt;
+    font-weight: bold;
+    color:#505050;
+  }
+
+  .modal-location2{
+    background-color: #e25c5b;
+  }
+
+  .modal-location2-container{
+    position:relative;
+  }
+
+  .modal-location2-img{
+    width:100%;
+  }
+
+  .modal-footer-row{
+    padding:0px !important;
+    margin:0px !important;
+    margin-top:0px !important;
+  }
+
+  .modal-footer-left{
+    height:50px !important;
+    color:#505050;
+    background-color: #f7c6c6;
+  }
+
+  .modal-footer-right{
+    height:50px !important;
+    color:#ffffff;
+    background-color: #e25c5b;
+  }
+
+  .modal-footer-text{
+    font-size:12pt;
+    font-weight:bold;
+    line-height: 50px;
+  }
+
+    .num-now{
+      font-size:9pt;
+    }
+
+  // 모달
+
+    /* matches 'btn-xs' */
+    .gil-img{
+      width: 95px;
+    }
+
+    .image-container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    nav{
+      height:50px;
+      line-height: 50px;
+      background-color:#e25c5b !important;
+    }
+
+    .brand-logo{
+    //  font-size:40pt !important;
+     // color:#4b4b4b;
+     // letter-spacing:-80;
+    }
+
+    #image-text1 h5{
+      font-size:15pt;
+      color:#4b4b4b;
+    }
+
+    #image-text1 p{
+      font-size:8pt;
+      color:#4b4b4b;
+    }
+
+    #image-text2 p{
+      font-size:13pt;
+      color:#4b4b4b;
+    }
+
+    #image-text2 .fa-user{
+      font-size:13pt;
+    }
+
+      .desc{
+        background-color:#e25c5b !important;
+        padding-top:40px;
+        padding-bottom:40px;
+        // height:456px;
+      }
+
+      .desc-title{
+        font-size:15pt;
+        font-weight: bold;
+        color:#ffffff;
+        // letter-spacing: -4px;
+        margin-bottom:22px;
+      }
+
+      .desc-img{
+        height:50px;
+      }
+
+      .desc-content{
+        font-size:8pt;
+        color:#ffffff;
+        margin-top:22px;
+      }
+
+      // .act-container{
+      //   height:480px;
+      //   padding-top:110px;
+      //   padding-bottom:110px;
+      // }
+
+      .slider{
+        position:relative;
+      }
+
+      .slider .slides li .caption{
+        width: 100% !important;
+        top:15%;
+        left:0;
+      }
+
+      .slider-left{
+        position:absolute;
+        top:40%;
+        left:5%;
+        color:#efefef;
+        font-size:80px;
+        z-index:999;
+      }
+
+      .slider-right{
+        position:absolute;
+        top:40%;
+        right:5%;
+        color:#efefef;
+        font-size:80px;
+        z-index:999;
+      }
+
+      .act-container{
+        // height:480px;
+        padding-top:60px;
+        padding-bottom:60px;
+      }
+
+      .step-img{
+        width:103px !important;
+      }
+
+      .step-num{
+        font-size:25pt;
+        color:#535353;
+        letter-spacing: -3.7px;
+        margin-bottom:0px;
+      }
+
+      .step-title{
+        font-size:25pt;
+        color:#535353;
+        margin-top:0px;
+      }
+
+      .step-content{
+        // font-size:32pt;
+        color:#535353 !important;
+        // margin-top:0px;
+      }
+
+      .end{
+        background-repeat: no-repeat;
+        background-position: 60% 45%;
+        background-size:cover;
+        // height:570px;
+      }
+
+      .quote{
+        font-size: 15pt !important;
+      }
+
+      .end-filter{
+        height:100%;
+        width:100%;
+        // background: rgba(255, 255, 255, .7);
+        padding-top:50px !important;
+        padding-bottom:50px !important;
+      }
+
+      .end-title{
+        font-size:25pt;
+        color:#7b7b7b;
+        // line-spacing:7px;
+        margin-bottom:0px;
+      }
+
+      .end-content{
+        margin-top:0;
+        font-size:10pt;
+        line-spacing:3px;
+      }
+
+      .end-content-red{
+        color:#e25c5b;
+        margin-top:20px;
+        margin-bottom:0px;
+      }
+
+      .facebook{
+        height:180px;
+        padding-top:30px !important;
+        padding-bottom:30px !important;
+        background-color:#F7F7F7;
+      }
+
+      .facebook-title{
+        font-size:16pt;
+        color:#3f3f3f;
+        letter-spacing: 4.8px;
+        margin-bottom:24px;
+        margin-top:0px;
+      }
+
+      .facebook-btn{
+        height:40px;
+        line-height: 40px;
+        width:80%;
+        border-radius: 10px;
+        border: 3px solid #395A99;
+        padding: 5px;
+        margin: 0 auto;
+        background-color:#fff;
+      }
+
+      .fa-facebook{
+        color:#395A99;
+        font-size:10pt;
+      }
+
+      .facebook-btn-content{
+        font-size:10pt;
+        color:#3b5998;
+        // letter-spacing: -4px;
+      }
+
+      #bottom-section{
+          position:fixed;
+          width:70px;
+          bottom:50%;
+          right:0px;
+          margin-bottom:0px;
+          z-index:9999;
+      }
+
+
+      footer{
+        padding-bottom:70px;
+      }
+
+}
+
+// 데스크탑
+@media (min-width:1025px) {
+
+  .modal{
+    width:40%;
+    max-height: 100% !important ;
+    overflow-y: hidden !important ;
+    top: 3% !important ;
+  }
+  .modal-content{
+    padding:0px !important;
+    width:100%;
+  }
+
+  .modal-title-container{
+    margin-top:21px;
+    padding-bottom:21px;
+  }
+
+  .modal-title{
+    font-size:30pt;
+    font-weight: bold;
+    color:#505050;
+  }
+
+  .modal-title-exit{
+    height:50px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+
+  .modal-location-container{
+    width:100%;
+    margin-bottom:150px;
+  }
+
+  .modal-location{
+    font-size:18pt;
+    font-weight: bold;
+    color:#505050;
+  }
+
+  .modal-location2-container{
+    position:relative;
+  }
+
+  .modal-location2{
+    width:100% !important;
+    background-color: #e25c5b;
+  }
+
+  .modal-location2-img{
+    width:100%;
+  }
+
+  .modal-footer-row{
+    padding:0px !important;
+    margin:0px !important;
+    margin-top:0px !important;
+  }
+
+  .modal-footer-left{
+    height:80px !important;
+    color:#505050;
+    background-color: #f7c6c6;
+  }
+
+  .modal-footer-right{
+    height:80px !important;
+    color:#ffffff;
+    background-color: #e25c5b;
+  }
+
+  .modal-footer-text{
+    font-size:24pt;
+    font-weight:bold;
+    line-height: 80px;
+  }
+
+    .num-now{
+      font-size:20pt;
+    }
+// 모달부분
+
+  .image-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  nav{
+    height:84px;
+    line-height: 84px;
+    background-color:#e25c5b !important;
+  }
+
+  .brand-logo{
+   font-size:40pt !important;
+   // color:#4b4b4b;
+   // letter-spacing:-80;
+  }
+
+  #image-text1 h5{
+    font-size:34pt;
+    color:#4b4b4b;
+  }
+
+  #image-text1 p{
+    font-size:18pt;
+    color:#4b4b4b;
+  }
+
+  #image-text2 p{
+    font-size:28pt;
+    color:#4b4b4b;
+  }
+
+  #image-text2 .fa-user{
+    font-size:28pt;
+  }
+
+    /* matches 'btn-xs' */
+    .gil-img{
+      width: 130px;
+    }
+
+    .desc{
+      background-color:#e25c5b !important;
+      padding-top:62px;
+      padding-bottom:62px;
+      // height:456px;
+    }
+
+    .desc-title{
+      font-size:25pt;
+      font-weight: bold;
+      color:#ffffff;
+      // letter-spacing: -4px;
+      margin-bottom:22px;
+    }
+
+    .desc-img{
+      height:50px;
+    }
+
+    .desc-content{
+      font-size:16pt;
+      color:#ffffff;
+      margin-top:22px;
+    }
+
+    .act-container{
+      height:480px;
+      padding-top:110px;
+      padding-bottom:110px;
+    }
+
+    .step-img{
+      width:103px;
+    }
+
+    .step-num{
+      font-size:32pt;
+      color:#535353;
+      letter-spacing: -3.7px;
+      margin-bottom:0px;
+    }
+
+    .step-title{
+      font-size:32pt;
+      color:#535353;
+      margin-top:0px;
+    }
+
+    .end{
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      background-size:cover;
+      // height:570px;
+    }
+
+    .quote{
+      font-size: 30pt !important;
+    }
+
+    .end-filter{
+      height:100%;
+      width:100%;
+      // background: rgba(255, 255, 255, .7);
+      padding-top:125px !important;
+      padding-bottom:115px !important;
+    }
+
+    .end-title{
+      font-size:60pt;
+      color:#7b7b7b;
+      line-spacing:7px;
+      margin-bottom:0px;
+    }
+
+    .end-content{
+      margin-top:0;
+      font-size:20pt;
+      line-spacing:3px;
+    }
+
+    .end-content-red{
+      color:#e25c5b;
+      margin-top:55px;
+      margin-bottom:0px;
+    }
+
+    .facebook{
+      height:180px;
+      padding-top:42px !important;
+      padding-bottom:42px !important;
+      background-color:#F7F7F7;
+    }
+
+    .facebook-title{
+      font-size:16pt;
+      color:#3f3f3f;
+      letter-spacing: 4.8px;
+      margin-bottom:24px;
+      margin-top:0px;
+    }
+
+    .facebook-btn{
+      height:56px;
+      width:50%;
+      border-radius: 10px;
+      border: 3px solid #395A99;
+      padding: 5px;
+      margin: 0 auto;
+      background-color:#fff;
+    }
+
+    .fa-facebook{
+      color:#395A99;
+      font-size:22pt;
+    }
+
+    .facebook-btn-content{
+      font-size:22pt;
+      color:#3b5998;
+      // letter-spacing: -4px;
+    }
+
+    .social{
+      padding-left:150px !important;
+      padding-right:150px !important;
+    }
+
+    #bottom-section{
+        position:fixed;
+        width:70px;
+        bottom:50%;
+        right:0px;
+        margin-bottom:0px;
+        z-index:9999;
+    }
+
+    footer{
+      padding-bottom:30px;
+    }
+
+}
+
+.main{
+  width:100%;
+}
+
+.image-container {
+  width:100%;
+  display: inline-block;
+  position: relative;
+}
+
+#gil1 {
+    position: absolute;
+    right: 24%;
+    top: 52%;
+}
+#gil2 {
+    position: absolute;
+    right: 24%;
+    top: 41%;
+}
+#gil3 {
+    position: absolute;
+    right: 26%;
+    top: 22%;
+}
+#gil4 {
+    position: absolute;
+    right: 27%;
+    top: 33%;
+}
+#gil5 {
+    position: absolute;
+    left: 29%;
+    top: 45%;
+}
+#gil6 {
+    position: absolute;
+    left: 39%;
+    top: 35%;
+}
+#gil7 {
+    position: absolute;
+    right: 27%;
+    bottom: 24%;
+}
+#image-text1{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+#image-text2{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.sns-right{
+  width:100%;
+}
+
+.btn-floating{
+  background-color:transparent;
+}
+
+.clipboard{
+  cursor: pointer;
+}
+
+a{
+  cursor: pointer;
+}

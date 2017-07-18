@@ -1,0 +1,15 @@
+
+<% all_num = 0 %>
+<% Gil.all.each do |g| %>
+<h5>길<%= g.num %> : <%= g.like %> 명 / <%= g.like + Plusnum.find(g.id).add_num %> 명
+  <form action="/home/num_manage<%= g.id %>" method="POST">
+    <input name="add_num" type="text" placeholder="<%= Plusnum.find(g.id).add_num %>" />
+    <button class="btn btn<%= g.id %>">확인</button>
+  </form>
+</h5><br />
+<% all_num = all_num + g.like %>
+<% end %>
+<br />
+<h3>총 : <%= all_num %> 명 / <%= all_num + Plusnum.find(8).add_num %></h3>
+<br />
+<form action="/home/num_manage8" method="POST"><input name="add_num" type="text" placeholder="<%= Plusnum.find(8).add_num %>" /><button class="btn btn8">확인</button></form>
