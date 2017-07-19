@@ -1,24 +1,12 @@
-# README
+# 시위 독려 캠페인 ‘순실길 밟기’ 웹페이지
+https://goo.gl/VfXSfk (한겨레 뉴스)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+http://naver.me/FXg1e6gi (YTN 뉴스 1분 50초)
 
-Things you may want to cover:
 
-* Ruby version
+### 툴: Ruby on Rails
+### API: 메테리얼라이즈CSS, 라이브리
+#### 설명: 시위 독려 캠페인 ‘순실길 밟기’ 웹페이지 입니다. ‘순실길 7코스’에 대한 위치와 참여 인원 수 등을 확인할 수 있
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 순실길 참여 기능 (세션을 통한 중복 방지)
+* 소셜 댓글 API 라이브리를 통한 비회원 댓글 기능
